@@ -111,7 +111,7 @@ int main(int argc, char **argv)
 	// convert value to host-order
 		
 		
-  // display the integer in value
+ 	// display the integer in value
 	printf("%d\n\n", value);
 	
 	
