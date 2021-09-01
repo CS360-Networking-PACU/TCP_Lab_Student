@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bin/TCP_Lab",
-            "args": ["-i", "127.0.0.1", "36018"],
+            "args": ["127.0.0.1", "36018"],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
