@@ -34,7 +34,9 @@ To write the C code:
 
 Read the file TCP_Lab.c  You will need to fill in code as described in each of the comments.  A rough outline of the code is below.  More instructions are listed in the source code:
 
-    * Use inet_pton() to turn argv[1] from a text representation to an address in network-order, binary format in sockaddr_in.sin_addr and fill out the rest of the sockaddr_in struct.  The port number will be in argv[2]
+    * Use inet_pton() to turn argv[1] from a text representation to an address in network-order, 
+      binary format in sockaddr_in.sin_addr and fill out the rest of the sockaddr_in struct.  
+      The port number will be in argv[2]
     * Create a TCP socket. (socket)
     * Put the integer (value) into network byte order (htonl)
     * Create a connection to the echo server (connect)
