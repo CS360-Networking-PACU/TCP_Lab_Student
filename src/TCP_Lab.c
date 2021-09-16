@@ -23,21 +23,18 @@
 
 
 // wireshark
-// tcp.dstport == 36018 || tcp.srcport == 36018
+// tcp.dstport == 36001 || tcp.srcport == 36001
 
-// ncat -l 36018 --keep-open --exec "/bin/cat" # tcp
-// ncat -l 36018 --keep-open --udp --exec "/bin/cat" --idle-timeout=100s
+// start the echo server
+// ncat -l 36001 --keep-open --exec "/bin/cat" # tcp
 // /usr/sbin/ss -l -t -4 -p
 
-// as root:
-// ~/enableUpdates.sh
-// zypper in ncat
-// ~/disableUpdates.sh
+// run your code
+// bin/TCP_Lab 127.0.0.1 36001
 
-// bin/TCP_Lab 127.0.0.1 36018
-
-//  nc -l 36018
-//  nc 127.0.0.1 36018
+// alternative nc commands to run the echo server:
+//  nc -l 36001
+//  nc 127.0.0.1 36001
 
 
 /****************************************************************************
